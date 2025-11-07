@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Civil Engineer Portfolio | Md Farbis Rahman</title>
+    <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons --><script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style>
+        /* Define a custom color palette for a professional, engineering look */
+        :root {
+            --color-primary: #1e3a8a; /* Dark Blue */
+            --color-secondary: #3b82f6; /* Medium Blue */
+            --color-accent: #f59e0b; /* Amber/Safety Yellow */
+        }
+        .text-primary { color: var(--color-primary); }
+        .bg-primary { background-color: var(--color-primary); }
+        .bg-secondary { background-color: var(--color-secondary); }
+        .border-primary { border-color: var(--color-primary); }
+        .text-accent { color: var(--color-accent); }
+        
+        /* Custom scrollbar styling for aesthetics */
+        body::-webkit-scrollbar { width: 8px; }
+        body::-webkit-scrollbar-track { background: #f1f1f1; }
+        body::-webkit-scrollbar-thumb { background: var(--color-secondary); border-radius: 10px; }
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+    <script>
+        // Function to handle smooth scrolling
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navbar --><header class="sticky top-0 z-50 bg-white shadow-lg">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+            <h1 class="text-xl font-bold text-primary">
+                MFR
+            </h1>
+            <div class="space-x-4 flex">
+                <button onclick="scrollToSection('home')" class="text-gray-600 hover:text-secondary transition duration-150 font-medium hidden sm:block">Home</button>
+                <button onclick="scrollToSection('expertise')" class="text-gray-600 hover:text-secondary transition duration-150 font-medium hidden sm:block">Expertise</button>
+                <button onclick="scrollToSection('projects')" class="text-gray-600 hover:text-secondary transition duration-150 font-medium hidden sm:block">Projects</button>
+                <button onclick="scrollToSection('extracurriculars')" class="text-gray-600 hover:text-secondary transition duration-150 font-medium hidden sm:block">Activities</button>
+                <a href="#contact" class="px-4 py-1.5 bg-secondary text-white rounded-lg shadow-md hover:bg-primary transition duration-300 font-semibold text-sm flex items-center">
+                    <i data-lucide="download" class="w-4 h-4 mr-1"></i>
+                    Download CV
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
+
+        <!-- 1. Hero Section --><section id="home" class="py-16 sm:py-24 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-16">
+            <div class="md:w-3/5">
+                <p class="text-lg text-secondary font-semibold mb-2">Hello, I'm</p>
+                <h2 class="text-5xl sm:text-7xl font-extrabold text-primary leading-tight">
+                    Md Farbis Rahman
+                </h2>
+                <h3 class="text-3xl text-gray-600 font-light mt-2 mb-6 border-b-2 border-accent inline-block pb-1">
+                    Civil Engineering Student
+                </h3>
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    Passionate and motivated civil engineering student specializing in **Structural Analysis and Design**. Eager to apply theoretical knowledge and advanced software skills, including **Etabs** and **Revit**, to innovative construction projects.
+                </p>
+                <a href="#contact" class="mt-8 inline-flex items-center px-8 py-3 bg-accent text-white font-bold rounded-xl shadow-lg hover:bg-yellow-600 transition duration-300 transform hover:scale-105">
+                    Get In Touch
+                </a>
+            </div>
+            <div class="md:w-2/5 flex justify-center">
+                <!-- Profile Image --><!-- IMPORTANT: Place your image file (e.g., "farbis_rahman.jpg") in the same directory as this HTML file. --><img src="farbis_rahman.jpg" alt="Md Farbis Rahman" class="w-64 h-64 sm:w-80 sm:h-80 object-cover rounded-full border-4 border-secondary shadow-xl" />
+            </div>
+        </section>
+
+        <!-- Separator Line --><hr class="border-t-2 border-gray-200 my-8 sm:my-12">
+
+        <!-- 2. Expertise Section (Updated to reflect Etabs, Revit, AutoCAD, GIS focus) --><section id="expertise" class="py-12 sm:py-16">
+            <h2 class="text-4xl font-bold text-center text-primary mb-12">My Core Expertise</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Skill Card 1: Structural Analysis --><div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-secondary">
+                    <i data-lucide="columns" class="w-8 h-8 text-secondary mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Structural Analysis & Design</h3>
+                    <p class="text-gray-600">Deep proficiency in structural theory, focused on the static and dynamic analysis and design of steel and reinforced concrete elements.</p>
+                </div>
+
+                <!-- Skill Card 2: Design Software & BIM --><div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-secondary">
+                    <i data-lucide="layout-grid" class="w-8 h-8 text-secondary mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Design Software & BIM Modeling</h3>
+                    <p class="text-gray-600">Expert use of **Etabs** for complex high-rise structural modeling and analysis, alongside **Revit** for Building Information Modeling (BIM).</p>
+                </div>
+
+                <!-- Skill Card 3: Drafting & Geospatial --><div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-secondary">
+                    <i data-lucide="drafting-compass" class="w-8 h-8 text-secondary mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Drafting & Geospatial Analysis</h3>
+                    <p class="text-gray-600">Proficient in **AutoCAD** for precise 2D/3D drafting and **GIS** mapping for site investigation, planning, and spatial data interpretation.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Separator Line --><hr class="border-t-2 border-gray-200 my-8 sm:my-12">
+
+
+        <!-- 3. Projects Section --><section id="projects" class="py-12 sm:py-16">
+            <h2 class="text-4xl font-bold text-center text-primary mb-12">Featured Projects</h2>
+            <div class="space-y-10">
+                
+                <!-- Project Card 1: Mock Bridge Design --><div class="bg-white p-6 md:p-8 rounded-xl shadow-xl border border-gray-100 hover:border-secondary transition duration-300">
+                    <div class="flex items-start">
+                        <i data-lucide="bridge" class="w-10 h-10 text-accent mr-4"></i>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-primary">Reinforced Concrete Bridge Design</h3>
+                            <p class="text-gray-500 text-sm mb-4">Academic Capstone Project | Fall 2024</p>
+                            <p class="text-gray-700 mb-4">
+                                Conducted full structural design, load calculations (AASHTO LRFD standards), and finite element modeling for a small-scale pedestrian overpass. Optimized materials for cost-efficiency while maintaining a high safety factor.
+                            </p>
+                            <div class="flex flex-wrap gap-2 text-sm">
+                                <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full font-medium">Etabs</span>
+                                <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full font-medium">AutoCAD</span>
+                                <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full font-medium">FEA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2: Mock Site Plan --><div class="bg-white p-6 md:p-8 rounded-xl shadow-xl border border-gray-100 hover:border-secondary transition duration-300">
+                    <div class="flex items-start">
+                        <i data-lucide="building-2" class="w-10 h-10 text-accent mr-4"></i>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-primary">Urban Water Retention System</h3>
+                            <p class="text-gray-500 text-sm mb-4">Hydraulics Coursework | Spring 2024</p>
+                            <p class="text-gray-700 mb-4">
+                                Developed a site drainage plan for a 5-acre commercial complex, integrating green infrastructure (permeable paving, bioswales) to manage stormwater runoff and reduce peak flow rates by 30%.
+                            </p>
+                            <div class="flex flex-wrap gap-2 text-sm">
+                                <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full font-medium">Hyrdology Modeling</span>
+                                <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full font-medium">GIS</span>
+                                <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full font-medium">Revit</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="text-center mt-12">
+                <button class="text-secondary hover:text-primary font-semibold transition duration-300">
+                    View More Projects &rarr;
+                </button>
+            </div>
+        </section>
+
+        <!-- Separator Line --><hr class="border-t-2 border-gray-200 my-8 sm:my-12">
+
+        <!-- 4. Extracurriculars & Certifications Section --><section id="extracurriculars" class="py-12 sm:py-16">
+            <h2 class="text-4xl font-bold text-center text-primary mb-12">Extracurriculars & Certifications</h2>
+            <div class="space-y-8 max-w-4xl mx-auto">
+
+                <!-- Activity 1: JRC Memorial Contest --><div class="flex items-start bg-white p-6 rounded-xl shadow-lg border-l-4 border-accent">
+                    <i data-lucide="trophy" class="w-8 h-8 text-accent mr-4 mt-1"></i>
+                    <div>
+                        <h3 class="text-xl font-semibold text-primary">Truss Mania - CENOVUS 1.0</h3>
+                        <p class="text-gray-600 mb-2">Participant, JRC Memorial Civil Engineering Contest</p>
+                        <p class="text-gray-500 text-sm">April 12, 2025 | Organized by Dept. of Civil Engineering, University of Asia Pacific</p>
+                    </div>
+                </div>
+
+                <!-- Activity 2: Quiz Competition --><div class="flex items-start bg-white p-6 rounded-xl shadow-lg border-l-4 border-accent">
+                    <i data-lucide="award" class="w-8 h-8 text-accent mr-4 mt-1"></i>
+                    <div>
+                        <h3 class="text-xl font-semibold text-primary">Quiz Competition Participant</h3>
+                        <p class="text-gray-600 mb-2">International Skill Innovation Fest 2024</p>
+                        <p class="text-gray-500 text-sm">April 29, 2024 | Organized by Dept. of Technical and Vocational Education (TVE), IUT</p>
+                    </div>
+                </div>
+
+                <!-- Activity 3: ACI Student Chapter --><div class="flex items-start bg-white p-6 rounded-xl shadow-lg border-l-4 border-accent">
+                    <i data-lucide="users-round" class="w-8 h-8 text-accent mr-4 mt-1"></i>
+                    <div>
+                        <h3 class="text-xl font-semibold text-primary">General Member, ACI Student Chapter - IUBAT</h3>
+                        <p class="text-gray-600 mb-2">Membership Period: March 2024 - March 2025</p>
+                        <p class="text-gray-500 text-sm">Actively involved in chapter activities and initiatives related to concrete technology.</p>
+                    </div>
+                </div>
+
+                <!-- Activity 4: ArcGIS Professional Training --><div class="flex items-start bg-white p-6 rounded-xl shadow-lg border-l-4 border-accent">
+                    <i data-lucide="map-pin" class="w-8 h-8 text-accent mr-4 mt-1"></i>
+                    <div>
+                        <h3 class="text-xl font-semibold text-primary">Professional Training: ArcGIS</h3>
+                        <p class="text-gray-600 mb-2">Completed Course on Geographic Information Systems</p>
+                        <p class="text-gray-500 text-sm">January 5 - May 20, 2024 | Organized by Technical Training Center, IUBAT</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Separator Line --><hr class="border-t-2 border-gray-200 my-8 sm:my-12">
+
+
+        <!-- 5. Contact & CV Download Section (Updated with your real contact details) --><section id="contact" class="py-12 sm:py-16 bg-white rounded-2xl shadow-2xl border-t-8 border-accent">
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-4xl font-bold text-primary mb-4">Ready to Build Together?</h2>
+                <p class="text-gray-600 text-lg mb-8">
+                    I'm actively seeking internship and full-time opportunities where I can apply my knowledge and contribute to impactful civil engineering projects.
+                </p>
+
+                <!-- CV Download Button (The core of the request) --><div class="mb-8">
+                    <!-- ACTION REQUIRED: Replace the '#' below with the actual URL to your hosted PDF CV file. --><a href="#" download="Md_Farbis_Rahman_CV.pdf" class="inline-flex items-center justify-center px-12 py-4 bg-red-600 text-white font-extrabold text-xl rounded-full shadow-2xl hover:bg-red-700 transition duration-300 transform hover:scale-105 ring-4 ring-red-300">
+                        <i data-lucide="file-text" class="w-6 h-6 mr-2"></i>
+                        DOWNLOAD MY RESUME (PDF)
+                    </a>
+                </div>
+
+                <!-- Contact Info --><div class="flex justify-center flex-wrap gap-6 mt-6 text-gray-700">
+                    <a href="mailto:farbis22@gmail.com" class="flex items-center hover:text-secondary transition duration-300">
+                        <i data-lucide="mail" class="w-5 h-5 mr-2"></i> farbis22@gmail.com
+                    </a>
+                    <a href="tel:+8801580578940" class="flex items-center hover:text-secondary transition duration-300">
+                        <i data-lucide="phone" class="w-5 h-5 mr-2"></i> +8801580578940
+                    </a>
+                    <a href="https://www.linkedin.com/in/farbisrahman" target="_blank" class="flex items-center hover:text-secondary transition duration-300">
+                        <i data-lucide="linkedin" class="w-5 h-5 mr-2"></i> LinkedIn Profile
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer --><footer class="bg-primary text-white py-6 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            &copy; 2024 Md Farbis Rahman. All rights reserved. Built with Tailwind CSS.
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons --><script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
